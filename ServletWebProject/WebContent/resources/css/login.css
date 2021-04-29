@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins: 300, 400, 500');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ff0;
+    font-family: 'Poppins', sans-serif;
+}
+    
+    .giris{
+        text-align: center;
+        width: 350px;
+        box-sizing: border-box;
+        padding: 40px;
+        background: white;
+    }
+    .giris h2 {
+        margin: 0 0 20px;
+        padding: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+        
+    }
+    .giris .pc {
+        position: relative;
+        width: 100%;
+        margin-bottom: 25px;       
+    }
+    .giris .pc input {
+        height: 50px;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        outline: none;
+        border: 1px solid #000;
+        
+    }
