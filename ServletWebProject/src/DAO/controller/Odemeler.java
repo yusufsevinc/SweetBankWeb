@@ -35,6 +35,7 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 		if (getaAccountInfo().getBakiye() >= tutar) {
 			return true;
 		}
+		
 		return false;
 	}
 	
@@ -78,6 +79,8 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 			req.setAttribute("dogalgaz", getaAccountInfo().getDogalgazFaturasi());
 			req.setAttribute("internet", getaAccountInfo().getInternetFaturasi());
 			req.setAttribute("kullaniciAdi", getaAccountInfo().getAdSoyad());
+			req.setAttribute("bakiye", getaAccountInfo().getBakiye());
+			
 			
 			
 			
@@ -95,6 +98,7 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
        	
         
 		Map<String, String[]> paraMap = req.getParameterMap();
@@ -104,31 +108,25 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 		    faturaAdi = paramEntry.getKey();
 			faturaTutari = Float.parseFloat(deger.get(0));
 		}
-       	if (faturaTutari != 0) {
-       		if (bakiyeKontrol(faturaTutari)) {
+       
+       		//if (bakiyeKontrol(faturaTutari)) {
        			faturaOde(faturaAdi, faturaTutari);
        			getaAccountInfo().faturalarýAl();
        			getaAccountInfo().setBakiye(getaAccountInfo().getBakiye() - faturaTutari);
-       	
+       			//req.setAttribute("fatura", true);
+       			doGet(req, resp);
        			
        			
+       		}
+//       		else {
+//       			req.setAttribute("fatura", false);
+//       			
+//       			doGet(req, resp);
+//       			
+//       		}
        			
-       			
-				
-			}else {
-				System.out.println("bakiyeniz yetersiz...");
-				doGet(req, resp);
-			}
-       	     
 			
-		}else {
-			System.out.println("faturanýz ödenmiþ");
-		}
-		
-
-
-		
-	}
+	//}
       
 	@Override
 	public boolean informationValidity() {
