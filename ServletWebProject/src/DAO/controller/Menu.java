@@ -24,7 +24,7 @@ public class Menu extends Data implements IInfoControl {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("menu doGet metodu çaðýrýldý...");
 
-		
+		doPost(req, resp);
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -41,7 +41,7 @@ public class Menu extends Data implements IInfoControl {
 			
 		}else {
 			
-			req.setAttribute("kullaniciId", getaAccountInfo().getAdSoyad());
+			req.setAttribute("isim", getaAccountInfo().getAdSoyad());
 			req.setAttribute("bakiye", getaAccountInfo().getBakiye());
 		
 			RequestDispatcher dispatcher = req.getRequestDispatcher("menu.jsp");

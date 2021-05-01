@@ -75,6 +75,7 @@ public class Login extends ConnectionDAO implements IInfoControl {
 			HttpSession session = req.getSession();
 			session.setAttribute("musteriNo", musteriNo);
 			session.setAttribute("musteriSifre",musteriSifre );
+			
 			getaAccountInfo().getInstance().girisYap(musteriNo);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("mainMenu");
 			dispatcher.forward(req, resp);

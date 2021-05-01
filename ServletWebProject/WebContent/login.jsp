@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--başlık-->
-<title>Login</title>
+<title>Sweet Bank</title>
 <script type="text/javascript">window.onbeforeunload = function() { redirect(window.history.back(1)); };</script>
 
 <link rel="stylesheet" type="text/css" href="resources/css/login.css">

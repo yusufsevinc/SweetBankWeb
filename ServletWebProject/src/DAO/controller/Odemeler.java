@@ -30,14 +30,14 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 	private float faturaTutari;
 	private String faturaAdi;
 	
-	private  boolean bakiyeKontrol(float tutar) {
-		
-		if (getaAccountInfo().getBakiye() >= tutar) {
-			return true;
-		}
-		
-		return false;
-	}
+//	private  boolean bakiyeKontrol(float tutar) {
+//		
+//		if (getaAccountInfo().getBakiye() >= tutar) {
+//			return true;
+//		}
+//		
+//		return false;
+//	}
 	
 	private void faturaOde(String faturaAdi , float faturaTutari){
 		
@@ -109,28 +109,22 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 			faturaTutari = Float.parseFloat(deger.get(0));
 		}
        
-       		//if (bakiyeKontrol(faturaTutari)) {
+       		
        			faturaOde(faturaAdi, faturaTutari);
        			getaAccountInfo().faturalarýAl();
        			getaAccountInfo().setBakiye(getaAccountInfo().getBakiye() - faturaTutari);
-       			//req.setAttribute("fatura", true);
+       		
        			doGet(req, resp);
        			
        			
        		}
-//       		else {
-//       			req.setAttribute("fatura", false);
-//       			
-//       			doGet(req, resp);
-//       			
-//       		}
-       			
-			
-	//}
+	
+
       
 	@Override
 	public boolean informationValidity() {
-		if (getaAccountInfo() != null) {
+		if ((getaAccountInfo().getMusteriNo() != null ) && 
+				(getaAccountInfo().getTcNo() != null)) {
 			return true;
 		}
 		return false;
@@ -143,11 +137,6 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 	}
 	
 	
-	@Override
-	public void destroy() {
-		// TODO Auto-generated method stub
-		Menu menu = new Menu();
-		
-	}
+	
 
 }

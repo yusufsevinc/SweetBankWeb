@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="page_type" content="np-template-header-footer-from-plugin">
 <meta http-equiv="Pragma" content="no-cache">
-<title>Home</title>
+<title>Sweet Bank</title>
 <link rel="stylesheet" href="resources/css/odemeler2.css" media="screen">
 <link rel="stylesheet" href="resources/css/odemeler1.css" media="screen">
 

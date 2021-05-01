@@ -1,0 +1,49 @@
+@charset "UTF-8";
+#sayfa{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    width: 520px;
+    min-height: auto;
+    
+}
+
+#baslik{
+    text-align: center;
+    color:coral;
+    font-size: 40px;
+    font-weight: bold;
+ 
+}
+
+#pMiktar{
+    margin-left: 10px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#table{
+   
+}
+th{
+    padding: 15px;
+    font-size: large;
+    text-align: end;
+}
+td{
+    
+    text-align: center;
+}
+.btn{
+    
+    font-size: large;
+
+    width:  120px;
+}
+
+#btn{
+    background-color: coral;
+}

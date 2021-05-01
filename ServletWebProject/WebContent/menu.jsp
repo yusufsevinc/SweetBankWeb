@@ -10,7 +10,7 @@
     <meta name="keywords" content="HOŞGE​LDİN, KULLANICI ADI, KULLANICI ADI">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
+    <title>Sweet Bank</title>
     <link rel="stylesheet" href="resources/css/menu2.css" media="screen">
 <link rel="stylesheet" href="resources/css/menu1.css" media="screen">
    
@@ -39,7 +39,7 @@
     <section class="u-align-left u-clearfix u-section-1" id="sec-92fd">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-palette-2-base u-text-1">HOŞGE​LDİN</h1>
-        <h2 class="u-text u-text-2">${kullaniciId}</h2>
+        <h2 class="u-text u-text-2">${isim}</h2>
         <a href="https://nicepage.com/c/product-list-html-templates" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-1"><span class="u-file-icon u-icon u-icon-1" data-animation-name="jackInTheBox" data-animation-duration="5000" data-animation-delay="1000" data-animation-direction=""><img src="resources/images/settingsIcon.png" alt=""></span>
         </a>
         <a href="https://nicepage.com/c/product-list-html-templates" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-2"><span class="u-file-icon u-icon u-icon-2" data-animation-name="bounceIn" data-animation-duration="6500" data-animation-delay="1500" data-animation-direction=""><img src="resources/images/turkishLiraIcon.png" alt=""></span>
@@ -52,21 +52,21 @@
                 <div class="u-container-layout u-container-layout-1">
                   <a href="https://nicepage.com/c/product-list-html-templates" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-3"><span class="u-file-icon u-icon u-icon-3" data-animation-name="jackInTheBox" data-animation-duration="5000" data-animation-delay="1000" data-animation-direction=""><img src="resources/images/withdrawIcon.png" alt=""></span>
                   </a>
-                  <a href="https://nicepage.com/c/video-website-templates" class="u-btn u-button-style u-palette-2-light-2 u-btn-4">Para çek</a>
+                  <a href="paraCekme" class="u-btn u-button-style u-palette-2-light-2 u-btn-4">Para çek</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <a href="https://nicepage.com/c/product-list-html-templates" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-5"><span class="u-file-icon u-icon u-icon-4" data-animation-name="jackInTheBox" data-animation-duration="5000" data-animation-delay="1000" data-animation-direction=""><img src="resources/images/depositIcon.png" alt=""></span>
                   </a>
-                  <a href="https://nicepage.com/c/video-website-templates" class="u-btn u-button-style u-custom-color-1 u-btn-6">para yatır</a>
+                  <a href="paraYatir" class="u-btn u-button-style u-custom-color-1 u-btn-6">para yatır</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <a href="https://nicepage.com/c/product-list-html-templates" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-7"><span class="u-file-icon u-icon u-icon-5" data-animation-name="jackInTheBox" data-animation-duration="5000" data-animation-delay="1000" data-animation-direction=""><img src="resources/images/transferIcon2.png" alt=""></span>
                   </a>
-                  <a href="https://nicepage.com/c/video-website-templates" class="u-btn u-button-style u-palette-3-light-1 u-btn-8">Havale yap</a>
+                  <a href="havale" class="u-btn u-button-style u-palette-3-light-1 u-btn-8">Havale yap</a>
                 </div>
               </div>
               <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4">
