@@ -78,7 +78,7 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
 			req.setAttribute("su", getaAccountInfo().getSuFaturasi());
 			req.setAttribute("dogalgaz", getaAccountInfo().getDogalgazFaturasi());
 			req.setAttribute("internet", getaAccountInfo().getInternetFaturasi());
-			req.setAttribute("kullaniciAdi", getaAccountInfo().getAdSoyad());
+			//req.setAttribute("kullaniciAdi", getaAccountInfo().getAdSoyad());
 			req.setAttribute("bakiye", getaAccountInfo().getBakiye());
 			
 			
@@ -123,7 +123,7 @@ public class Odemeler extends ConnectionDAO implements IInfoControl{
       
 	@Override
 	public boolean informationValidity() {
-		if ((getaAccountInfo().getMusteriNo() != null ) && 
+		if ((getaAccountInfo().getMusteriNo() != null ) ||
 				(getaAccountInfo().getTcNo() != null)) {
 			return true;
 		}

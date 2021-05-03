@@ -57,7 +57,7 @@
 			<h2 class="u-text u-text-custom-color-5 u-text-1"
 				data-animation-name="zoomIn" data-animation-duration="5000"
 				data-animation-delay="1000" data-animation-direction="">Sayın
-				${kullaniciAdi }</h2>
+				${isim }</h2>
 			<div
 				class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
 				<div class="u-layout">

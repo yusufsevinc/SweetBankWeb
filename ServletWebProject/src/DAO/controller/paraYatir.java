@@ -17,8 +17,7 @@ import DAO.ConnectionDAO;
 public class paraYatir  extends ConnectionDAO implements IInfoControl{
 
 	RequestDispatcher dispatcher;
-	//private int bakiye;
-	private String isim;
+	
 	
 	private void paraYatir(int miktar) {
 		
@@ -42,7 +41,7 @@ public class paraYatir  extends ConnectionDAO implements IInfoControl{
 		HttpSession session = req.getSession();
 		if(informationValidity()) {
 			req.setAttribute("bakiye", getaAccountInfo().getBakiye());
-			req.setAttribute("isim", getaAccountInfo().getAdSoyad());
+			//req.setAttribute("isim", getaAccountInfo().getAdSoyad());
 		
 		    
 		    dispatcher = req.getRequestDispatcher("paraYatir.jsp");

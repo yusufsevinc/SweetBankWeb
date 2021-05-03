@@ -11,6 +11,8 @@
 <script type="text/javascript">window.onbeforeunload = function() { redirect(window.history.back(1)); };</script>
 
 <link rel="stylesheet" type="text/css" href="resources/css/login.css">
+
+
 </head>
 
 <body>

@@ -18,7 +18,6 @@
 				yonlendir();
 				return true;
 			}
-			
 		}
         </script>
         <script>

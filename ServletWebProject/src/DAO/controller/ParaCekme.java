@@ -48,7 +48,7 @@ public class ParaCekme  extends ConnectionDAO implements IInfoControl{
 		
 		if (informationValidity()) {
 			req.setAttribute("bakiye", getaAccountInfo().getBakiye());
-			req.setAttribute("isim", getaAccountInfo().getAdSoyad());
+			//req.setAttribute("isim", getaAccountInfo().getAdSoyad());
 			 dispatcher = req.getRequestDispatcher("paraCekme.jsp");
 			dispatcher.forward(req, resp);
 			
@@ -82,7 +82,7 @@ public class ParaCekme  extends ConnectionDAO implements IInfoControl{
 
 	@Override
 	public boolean informationValidity() {
-		if ((getaAccountInfo().getMusteriNo() != null ) && 
+		if ((getaAccountInfo().getMusteriNo() != null ) || 
 				(getaAccountInfo().getTcNo() != null)) {
 			return true;
 		}
