@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--başlık-->
+
 <title>Sweet Bank</title>
 <script type="text/javascript">window.onbeforeunload = function() { redirect(window.history.back(1)); };</script>
 
@@ -21,18 +21,22 @@
         <form action ="loginController" method="post" >
             <div class="pc">
                 <span>Müşteri No veya TC Kimlik No</span>
-            <input type="text"  name="username" required>
+            <input type="text"  name="username" maxlength="11" required>
             </div>
               <div class="pc">
-                   <span>Şifre</span>
+              <br>
+                   <span>Şifre</span><br>
             <input type="password"  name="password" required>
             </div>
               <div class="pc">
-            <input type="submit" value="submit">
+              <br>
+            <input id="input" type="submit" value="Giriş">
             </div>
         </form>
-        <a href="#">şifremi unuttum</a><br>
-        <a href="/loginController">Sende Sweet Banklı ol</a>
+        <br>
+        <br>
+        <a  class = "link" href="loginController">Şifremi Unuttum</a><br>
+        <a class = "link"  href="basvuru">Sende Sweet Banklı Ol</a>
     </div>
   
 </body>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+#sayfa{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 494px;
+    min-height: 500px;
+    position: relative;
+   
+}
+
+caption{
+    color: coral;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+th{
+    text-align: end;
+    font-size: 20px;
+    padding: 15px;
+}
+
+input {
+    font-weight: bold;
+    width: 200px;
+    min-height: 20px;
+}
+select{
+    height: 25px;
+    min-width: 205px;
+    font-weight: bold;
+}
+button{
+    color: red;
+    margin-top: 20px;
+    height: 25px;
+    min-width: 100px;
+    font-weight: bold;
+}
